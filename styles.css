@@ -1,0 +1,76 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom gradient text effect */
+.gradient-text {
+    background: linear-gradient(to right, #e879f9, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif; /* General font family */
+}
+
+/* Section styling */
+.main-section {
+    background-color: #1f2937; /* Dark gray background */
+    padding: 4rem 0; /* Vertical padding */
+    border-radius: 1rem; /* Rounded corners */
+    margin: 2rem 0; /* Margin around the section */
+}
+
+.content {
+    text-align: center; /* Center the text */
+    color: #fff; /* Text color */
+}
+
+.cta-button {
+    background-color: #48cae4; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #00aaff; /* Hover color */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Style for the cards in services section */
+.card {
+    background-color: #1f2937; /* Dark gray for the cards */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 2rem; /* Padding inside the cards */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slightly lift on hover */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Custom responsive design for larger screens */
+@media (min-width: 1024px) {
+    .mission-section {
+        display: flex; /* Flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space out items */
+        gap: 2rem; /* Gap between items */
+    }
+
+    .mission-image {
+        flex: 1; /* Take equal space */
+        max-width: 600px; /* Max width for the image */
+    }
+
+    .mission-text {
+        flex: 1; /* Take equal space */
+    }
+}
